@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    /*credit- @_ighosh(igradients)*/
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+    color: white;
+}
+
+.plan ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.plan ul li:last-child {
+    border-bottom: none;
+}
+
+.plan a {
+    text-decoration: none;
+    background: #12c2e9;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.plan h2 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-size: 50px;
+    font-family: serif;
+    margin: 10px 0;
+}
+
+
+/* flex-container */
+
+.pricing-grid {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.plan {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background: rgba(256, 256, 256, 0.4);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.plan>* {
+    flex: 1 1 100%;
+}
+
+.plan .cta {
+    align-self: flex-end;
+}
